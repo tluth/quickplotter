@@ -18,15 +18,17 @@ parser.add_argument("-f", "--filepath",
                     required=True)
 args = parser.parse_args()
 
+# create the plot
 plt.figure(figsize = (20, 10))
-
 x = args.x
 y = args.y
 
+# plot all the seperate datasets 
 for i in range(len(args.filepath)):
     filepath = args.filepath[i]
     df = pd.read_csv(filepath, header = 0)
     plt.plot(df[x], df[y])
 
+# save to local directory & display
 plt.savefig("./my_plot")
 plt.show()
