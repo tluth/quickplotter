@@ -5,4 +5,6 @@ This was only created for a particular task I was working on, so it isn't partic
 
 Usage: 
 
-  ```$ python quickplotter.py <header for the x data> <header for the y data> -f <path to csv files containing the data>```
+  ```$ python quickplotter.py <header for the x data> <header for the y data> -f <path to csv file>```
+  
+  add as many file paths as you like with the -f flag.
