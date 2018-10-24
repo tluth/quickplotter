@@ -6,8 +6,7 @@ import pandas as pd
 import argparse
 
 # Parse command line arguments
-parser = argparse.ArgumentParser(
-    description='Train Mask R-CNN to detect balloons.')
+parser = argparse.ArgumentParser()
 parser.add_argument('x',
                     help="Header name for desired x variable")
 parser.add_argument('y',
